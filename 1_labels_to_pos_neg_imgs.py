@@ -4,16 +4,16 @@ import time
 import cv2
 from xml.dom import minidom
 from os.path import basename
-from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+# from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 
 #標記檔的path
-xmlFolder = "H:/working/cascade_cat_face/voc_dataset/labels"
+xmlFolder = "./voc_dataset/labels"
 #圖片檔的path
-imgFolder = "H:/working/cascade_cat_face/voc_dataset/images"
+imgFolder = "./voc_dataset/images"
 #要取出的標記名稱(class name)
-labelName = "catface"
+labelName = "cat"
 #專案目錄，所有產生的檔案或目錄皆會存於此
-projFolder = "H:/working/cascade_cat_face/cascade_training"
+projFolder = "./cascade_training"
 #訓練的圖片大小(建議不要太大)
 outputSize = (60, 60)
 #產生的訓練圖片類型

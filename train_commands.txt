@@ -1,3 +1,10 @@
-opencv\build\x64\vc15\bin\opencv_createsamples.exe -info positives.info -vec samples.vec -w 60 -h 60 -num 1790
+mkdir -p voc_dataset/images voc_dataset/labels
+mkdir cascade_training
 
-opencv\build\x64\vc15\bin\opencv_traincascade.exe  -data H:\working\cascade_cat_face\cascade_training -vec samples.vec -bg negatives.info -numPos 1700 -numNeg 7000 -numStages 8 -minHitRate 0.995 -maxFalseAlarmRate 0.3 -w 60 -h 60 -featureType LBP
+docker run -it -w /app -v `pwd`/cascade_training:/app hmmbug/docker-anaconda-opencv /bin/bash
+
+opencv_createsamples -info positives.info -vec samples.vec -w 60 -h 60 -num 48
+
+mkdir output
+
+opencv_traincascade -data output -vec samples.vec -bg negatives.info -numPos 48 -numNeg 8000 -numStages 8 -minHitRate 0.995 -maxFalseAlarmRate 0.3 -w 60 -h 60 -featureType LBP

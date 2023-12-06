@@ -7,7 +7,7 @@ import numpy as np
 import imutils
 
 #專案目錄，所有產生的檔案或目錄皆會存於此
-projFolder = "H:/working/cascade_cat_face/cascade_training"
+projFolder = "cascade_training"
 #sliding window移動距離
 movePixels = 120
 #sliding window時圖片依次的縮小比例

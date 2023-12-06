@@ -1,7 +1,7 @@
 import cv2
 import os
 
-projFolder = "H:/working/cascade_cat_face/cascade_training"
+projFolder = "cascade_training"
 
 
 aug_positives = os.path.join(projFolder, "aug_positives")

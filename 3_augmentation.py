@@ -6,7 +6,7 @@ from os.path import basename
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 
 #專案目錄，所有產生的檔案或目錄皆會存於此
-projFolder = "H:/working/cascade_cat_face/cascade_training"
+projFolder = "cascade_training"
 #產生的正向圖片大小
 outputSize = (60, 60)
 #產生的圖片格式
