@@ -1,0 +1,26 @@
+<annotation>
+	<folder>data</folder>
+	<filename>0005.jpg</filename>
+	<path>/Users/zego/Project/cascade_opencv_train/data/0005.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2853</width>
+		<height>3803</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>701</xmin>
+			<ymin>441</ymin>
+			<xmax>2180</xmax>
+			<ymax>1941</ymax>
+		</bndbox>
+	</object>
+</annotation>
